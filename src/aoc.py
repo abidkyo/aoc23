@@ -12,6 +12,7 @@ import re
 
 
 INFINITY = float("inf")
+EN_DIGITS = dict(zip("zero, one, two, three, four, five, six, seven, eight, nine".split(", "), range(0, 10)))
 
 
 def cat(iterable):
@@ -74,6 +75,15 @@ def read_input(day: int, test: bool) -> str:
 
     with open(filename, "r") as f:
         return f.read()
+
+
+def en_digit(string: str) -> int:
+    """Parse digit 0 - 9 in english spelling."""
+
+    for key, value in EN_DIGITS.items():
+        if string.startswith(key):
+            return value
+    return -1
 
 
 def digits(string: str) -> list:
