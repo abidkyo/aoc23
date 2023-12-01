@@ -29,4 +29,4 @@ from aoc import read_input
 
 # ------------------------------------------------------------------------------
 
-txt = read_input(1, True, "").splitlines()
+txt = read_input(1, True).splitlines()
