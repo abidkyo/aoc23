@@ -76,11 +76,11 @@ def read_input(day: int, test: bool) -> str:
         return f.read()
 
 
-def integers(string: str) -> list:
+def digits(string: str) -> list:
     return map_list(int, string)
 
 
-def get_digits(string: str) -> list:
+def integers(string: str) -> tuple:
     return map_tuple(int, re.findall(r"-?\d+", string))
 
 
