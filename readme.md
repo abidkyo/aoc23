@@ -2,10 +2,11 @@
 
 # Advent Of Code 23 - Python
 
-| Day                                       | Description           | File                     |
-| ----------------------------------------- | --------------------- | ------------------------ |
-| [00](https://adventofcode.com/2023)       | AOC Helper Functions  | [aoc.py](src/aoc.py)     |
-| [01](https://adventofcode.com/2023/day/1) | Find digits in string | [day01.py](src/day01.py) |
+| Day                                       | Description            | File                     |
+| ----------------------------------------- | ---------------------- | ------------------------ |
+| [00](https://adventofcode.com/2023)       | AOC Helper Functions   | [aoc.py](src/aoc.py)     |
+| [01](https://adventofcode.com/2023/day/1) | Find digits in string  | [day01.py](src/day01.py) |
+| [02](https://adventofcode.com/2023/day/2) | Parse digits in string | [day02.py](src/day02.py) |
 
 ### Note
 
