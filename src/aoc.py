@@ -67,8 +67,8 @@ def get_neighbour(x, y, amount=4):
 
 
 def read_input(day: int, test: bool) -> str:
-    # filename = "input/day01.txt"
-    # filename = "input/day01_test.txt"
+    # filename == "input/day01.txt" or "input/day01_test.txt"
+
     filename = f"input/day{day:02d}"
     filename += "_test" if test else ""
     filename += ".txt"
@@ -106,12 +106,12 @@ def tuple_sum(a: tuple, b: tuple) -> tuple:
     return tuple(sum([x, y]) for x, y in zip(a, b))
 
 
-def iter_take(n: int, iterable) -> list:
-    # return next item from generator or None for n-times
+def iter_take(iterable, n: int) -> list:
+    # return list of n-items from iterable or until iterable exhausted
     return list(islice(iterable, n))
 
 
-def iter_ncycles(n, iterable):
+def iter_ncycles(iterable, n: int):
     return chain.from_iterable(repeat(iterable, n))
 
 
@@ -122,15 +122,16 @@ def list_flatten(iterable):
 def list_transpose(src: list) -> list:
     # length of every list should be the same
     assert all(len(a) == len(src[0]) for a in src)
-
     return map_list(list, zip(*src))
 
 
 def list_copy(src: list) -> list:
-    # every other method of copy
-    # does not actually copy the list
+    # every other method of copy does not actually copy the list
     return deepcopy(src)
 
 
 def list_remove_value(val, src: list) -> list:
     return list(filter(lambda x: x != val, src))
+
+
+# ------------------------------------------------------------------------------
