@@ -7,9 +7,10 @@ Timing:
 python3 = 25 ms
 """
 
-from aoc import map_list, read_input
 from math import prod
 import re
+
+from aoc import map_list, read_input
 
 # ------------------------------------------------------------------------------
 
@@ -30,10 +31,11 @@ def parse_digits(data: str, part2: bool = False) -> int:
 
     for color, max_amount in COLORS_MAX.items():
         amount = map_list(int, re.findall(r"(\d+) " + color, data))
+        max_color = max(amount)
 
         if part2:
-            maxs.append(max(amount))
-        elif max(amount) > max_amount:
+            maxs.append(max_color)
+        elif max_color > max_amount:
             return 0
 
     return prod(maxs)
