@@ -15,11 +15,12 @@ EOF
 [[ -z $1 ]] && show_help
 
 YEAR="2023"
-DAY=$(printf "%02d" "$1")
+DAY=$(printf "%d" "$1")
+FILENAME=$(printf "%02d" "$1")
 
 curl --silent "https://adventofcode.com/${YEAR}/day/${DAY}/input" \
   --cookie "session=${AOC_SESSION}" \
   -A 'abidkyo @ github.com/abidkyo' \
-  -o "./input/day${DAY}.txt"
+  -o "./input/day${FILENAME}.txt"
 
 exit 0
