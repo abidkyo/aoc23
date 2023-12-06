@@ -21,6 +21,7 @@ if ! [[ -f "${SRC_FILE}" ]]; then
   cp "./src/template.py" "${SRC_FILE}"
   sed -i "12s/1/${1}/" "${SRC_FILE}"
   sed -i "32s/1/${1}/" "${SRC_FILE}"
+  sed -i "33s/1/${1}/" "${SRC_FILE}"
 fi
 
 touch "./input/day${DAY}.txt"
