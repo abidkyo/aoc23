@@ -9,7 +9,7 @@ from aoc import read_input
 # ------------------------------------------------------------------------------
 
 
-# def solve(day=1, test=False):
+# def solve(day: int = 1, test: bool = False) -> tuple:
 #     txt = read_input(day, test).splitlines()
 
 #     part1 = 0
@@ -30,3 +30,4 @@ from aoc import read_input
 # ------------------------------------------------------------------------------
 
 txt = read_input(1, True).splitlines()
+# txt = read_input(1, False).splitlines()

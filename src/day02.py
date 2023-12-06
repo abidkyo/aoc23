@@ -39,7 +39,7 @@ def parse_digits(data: str, part2: bool = False) -> int:
     return prod(maxs)
 
 
-def solve(day=2, test=False):
+def solve(day: int = 2, test: bool = False) -> tuple:
     txt = read_input(day, test).splitlines()
 
     part1 = sum(i for i, data in enumerate(txt, 1) if parse_digits(data))

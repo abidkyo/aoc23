@@ -14,23 +14,26 @@ EOF
 
 [[ -z $1 ]] && show_help
 
-DAY=$(printf "%02d" "$1")
-SRC_FILE="./src/day${DAY}.py"
+DAY=${1}
+FILENAME=$(printf "%02d" "${DAY}")
+SRC_FILE="./src/day${FILENAME}.py"
 
 if ! [[ -f "${SRC_FILE}" ]]; then
   cp "./src/template.py" "${SRC_FILE}"
-  sed -i "12s/1/${1}/" "${SRC_FILE}"
-  sed -i "32s/1/${1}/" "${SRC_FILE}"
+  sed -i "12s/1/${DAY}/" "${SRC_FILE}"
+  sed -i "32s/1/${DAY}/" "${SRC_FILE}"
+  sed -i "33s/1/${DAY}/" "${SRC_FILE}"
 fi
 
-touch "./input/day${DAY}.txt"
-touch "./input/day${DAY}_test.txt"
+touch "./input/day${FILENAME}.txt"
+touch "./input/day${FILENAME}_test.txt"
 
-echo "AOC Day${DAY} created"
+echo "AOC Day ${DAY} created"
 
-if [[ $(date +%d:%H:%M) > "${1}:06:00" ]]; then
+if [[ $(date +%d:%H:%M) > "${DAY}:06:00" ]]; then
   echo "getting input"
-  ./get_input.sh "$1"
+  ./get_input.sh "${DAY}"
+  google-chrome --new-window "https://adventofcode.com/${YEAR}/day/${DAY}"
 fi
 
 exit 0
