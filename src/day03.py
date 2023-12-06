@@ -34,7 +34,7 @@ def parse_input(txt: list):
     return nums_yx
 
 
-def solve(day=3, test=False):
+def solve(day: int = 3, test: bool = False) -> tuple:
     txt = read_input(day, test).splitlines()
 
     for y in range(len(grid)):
