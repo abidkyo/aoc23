@@ -8,6 +8,7 @@
 | [01](https://adventofcode.com/2023/day/1) | Find digits in string     | [day01.py](src/day01.py) |
 | [02](https://adventofcode.com/2023/day/2) | Parse digits in string    | [day02.py](src/day02.py) |
 | [04](https://adventofcode.com/2023/day/4) | Winning cards and numbers | [day04.py](src/day04.py) |
+| [06](https://adventofcode.com/2023/day/6) | Lower and upper bounds    | [day06.py](src/day06.py) |
 
 ### Note
 
