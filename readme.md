@@ -9,6 +9,7 @@
 | [02](https://adventofcode.com/2023/day/2)  | Parse digits in string      | [day02.py](src/day02.py) |
 | [03](https://adventofcode.com/2023/day/3)  | Numbers and Symbols in Grid | [day03.py](src/day03.py) |
 | [04](https://adventofcode.com/2023/day/4)  | Winning cards and numbers   | [day04.py](src/day04.py) |
+| [05](https://adventofcode.com/2023/day/5)  | Number maps and ranges      | [day05.py](src/day05.py) |
 | [06](https://adventofcode.com/2023/day/6)  | Lower and upper bounds      | [day06.py](src/day06.py) |
 | [07](https://adventofcode.com/2023/day/7)  | Poker-like game             | [day07.py](src/day07.py) |
 | [08](https://adventofcode.com/2023/day/8)  | Path from start to end      | [day08.py](src/day08.py) |
