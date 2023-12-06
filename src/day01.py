@@ -26,7 +26,7 @@ def find_add_digits(string: list, part2: bool = False) -> int:
     return digits[0] * 10 + digits[-1]
 
 
-def solve(day=1, test=False):
+def solve(day: int = 1, test: bool = False) -> tuple:
     txt = read_input(day, test).splitlines()
 
     data = txt[0:4] if test else txt
