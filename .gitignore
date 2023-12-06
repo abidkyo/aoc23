@@ -1,2 +1,4 @@
 __pycache__
 tox.ini
+input/*.txt
+!input/*test.txt
