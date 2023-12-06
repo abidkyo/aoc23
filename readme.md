@@ -7,6 +7,7 @@
 | [00](https://adventofcode.com/2023)       | AOC Helper Functions      | [aoc.py](src/aoc.py)     |
 | [01](https://adventofcode.com/2023/day/1) | Find digits in string     | [day01.py](src/day01.py) |
 | [02](https://adventofcode.com/2023/day/2) | Parse digits in string    | [day02.py](src/day02.py) |
+| [03](https://adventofcode.com/2023/day/3) |                           | [day03.py](src/day03.py) |
 | [04](https://adventofcode.com/2023/day/4) | Winning cards and numbers | [day04.py](src/day04.py) |
 | [06](https://adventofcode.com/2023/day/6) | Lower and upper bounds    | [day05.py](src/day05.py) |
 
