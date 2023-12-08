@@ -86,6 +86,13 @@ def en_digit(string: str) -> int:
     return -1
 
 
+def quad_root(a, b, c) -> tuple:
+    dis = b**2 - 4 * a * c
+    r1 = (b - math.sqrt(dis)) / 2 * a
+    r2 = (b + math.sqrt(dis)) / 2 * a
+    return r1, r2
+
+
 def digits(string: str) -> list:
     return map_list(int, string)
 
