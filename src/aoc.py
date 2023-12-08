@@ -45,6 +45,15 @@ def sign(num: int):
         return 0
 
 
+def lcm(nums: list) -> int:
+    assert type(nums[0]) == int
+
+    res = 1
+    for n in nums:
+        res = res * n // math.gcd(res, n)
+    return res
+
+
 def identity_matrix(n: int, val: int = 1):
     mat = []
     for i in range(n):
