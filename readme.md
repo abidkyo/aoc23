@@ -10,6 +10,7 @@
 | [04](https://adventofcode.com/2023/day/4) | Winning cards and numbers | [day04.py](src/day04.py) |
 | [06](https://adventofcode.com/2023/day/6) | Lower and upper bounds    | [day06.py](src/day06.py) |
 | [08](https://adventofcode.com/2023/day/8) | Path from start to end    | [day08.py](src/day08.py) |
+| [09](https://adventofcode.com/2023/day/9) | Sequence extrapolation    | [day09.py](src/day09.py) |
 
 ### Note
 
