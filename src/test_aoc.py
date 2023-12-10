@@ -4,10 +4,10 @@
 Test for AOC Helper Functions.
 """
 
-from aoc import get_neighbour
+from aoc import bfs, bfs_paths, dfs, dfs_paths, get_neighbour
 
 
-def testGetNeighbour():
+def test_get_neighbour():
     """Test get neighbour for point (0,0)."""
 
     # 4-neighbour NSWE
@@ -27,3 +27,31 @@ def testGetNeighbour():
     n9 = list(get_neighbour(0, 0, 9))
     assert len(n9) == len(V9)
     assert all(n in V9 for n in n9)
+
+
+def test_bfs_dfs():
+    graph = {
+        "A": set(["B", "C"]),
+        "B": set(["A", "D", "E"]),
+        "C": set(["A", "F"]),
+        "D": set(["B"]),
+        "E": set(["B", "F"]),
+        "F": set(["C", "E"]),
+    }
+
+    res = bfs(graph, "A")
+    assert res == {"B", "C", "A", "F", "D", "E"}
+
+    res = list(bfs_paths(graph, "A", "F"))
+    for r in res:
+        assert r in [["A", "C", "F"], ["A", "B", "E", "F"]]
+
+    res = dfs(graph, "C")
+    assert res == {"E", "D", "F", "A", "C", "B"}
+
+    res = list(dfs_paths(graph, "C", "F"))
+    for r in res:
+        assert r in [["C", "F"], ["C", "A", "B", "E", "F"]]
+
+
+# ------------------------------------------------------------------------------
