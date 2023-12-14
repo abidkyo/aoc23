@@ -18,9 +18,12 @@
 | [11](https://adventofcode.com/2023/day/11) | Manhattan distance          | [day11.py](src/day11.py) |
 | [12](https://adventofcode.com/2023/day/12) | Dynamic Programming         | [day12.py](src/day12.py) |
 | [13](https://adventofcode.com/2023/day/13) | Reflection Point            | [day13.py](src/day13.py) |
+| [14](https://adventofcode.com/2023/day/14) | Points and Cache            | [day14.py](src/day14.py) |
 
 ### Note
 
 python : `Python 3.10.12`
 
 pypy : `Python 3.10.13 [PyPy 7.3.14 with GCC 10.2.1]`
+
+<!-- ----------------------------------------------------------------------- -->

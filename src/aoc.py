@@ -14,6 +14,9 @@ from re import findall
 INFINITY = float("inf")
 EN_DIGITS = dict(zip("zero, one, two, three, four, five, six, seven, eight, nine".split(", "), range(0, 10)))
 
+# x,y point
+DIR = {"n": (0, -1), "e": (1, 0), "s": (0, 1), "w": (-1, 0)}
+
 
 def cat(iterable):
     return "".join(iterable)
