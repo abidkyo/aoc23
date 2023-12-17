@@ -21,6 +21,7 @@
 | [14](https://adventofcode.com/2023/day/14) | Points and Cache            | [day14.py](src/day14.py) |
 | [15](https://adventofcode.com/2023/day/15) | Data manipulation           | [day15.py](src/day15.py) |
 | [16](https://adventofcode.com/2023/day/16) | Path and BFS                | [day16.py](src/day16.py) |
+| [17](https://adventofcode.com/2023/day/17) | Path and Dijkstra           | [day17.py](src/day17.py) |
 
 ### Note
 
