@@ -21,6 +21,7 @@ from aoc import read_input
 # ------------------------------------------------------------------------------
 
 # res = solve(test=True)
+# print(*res)
 # assert res == (0, 0)
 
 # res = solve()
@@ -31,3 +32,7 @@ from aoc import read_input
 
 txt = read_input(1, True).splitlines()
 # txt = read_input(1, False).splitlines()
+
+G = [[c for c in row] for row in txt]
+R = len(G)
+C = len(G[0])
