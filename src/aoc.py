@@ -7,8 +7,8 @@ AOC Helper Functions.
 
 from itertools import chain, repeat, islice, product
 from copy import deepcopy
-import math
-import re
+from math import gcd, sqrt
+from re import findall
 
 
 INFINITY = float("inf")
@@ -50,7 +50,7 @@ def lcm(nums: list) -> int:
 
     res = 1
     for n in nums:
-        res = res * n // math.gcd(res, n)
+        res = res * n // gcd(res, n)
     return res
 
 
@@ -97,8 +97,8 @@ def en_digit(string: str) -> int:
 
 def quad_root(a, b, c) -> tuple:
     dis = b**2 - 4 * a * c
-    r1 = (b - math.sqrt(dis)) / 2 * a
-    r2 = (b + math.sqrt(dis)) / 2 * a
+    r1 = (b - sqrt(dis)) / 2 * a
+    r2 = (b + sqrt(dis)) / 2 * a
     return r1, r2
 
 
@@ -107,7 +107,7 @@ def digits(string: str) -> list:
 
 
 def integers(string: str) -> tuple:
-    return map_tuple(int, re.findall(r"-?\d+", string))
+    return map_tuple(int, findall(r"-?\d+", string))
 
 
 def manhattan_distance(x: tuple, y: tuple) -> int:
@@ -115,7 +115,7 @@ def manhattan_distance(x: tuple, y: tuple) -> int:
 
 
 def euclidean_distance(x: tuple, y: tuple) -> int:
-    return math.sqrt(abs(x[0] - y[0]) ** 2 + abs(x[1] - y[1]) ** 2 + abs(x[2] - y[2]) ** 2)
+    return sqrt(abs(x[0] - y[0]) ** 2 + abs(x[1] - y[1]) ** 2 + abs(x[2] - y[2]) ** 2)
 
 
 def tuple_sum(a: tuple, b: tuple) -> tuple:
