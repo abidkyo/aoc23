@@ -5,7 +5,7 @@ AOC Helper Functions.
 """
 
 
-from itertools import chain, repeat, islice, product
+from itertools import chain, islice, pairwise, product, repeat
 from copy import deepcopy
 from math import gcd, sqrt
 from re import findall
@@ -141,6 +141,23 @@ def euclidean_distance(x: tuple, y: tuple) -> int:
 
 def tuple_sum(a: tuple, b: tuple) -> tuple:
     return tuple(sum([x, y]) for x, y in zip(a, b))
+
+
+def shoelace(points: list[tuple[int, int]]) -> int:
+    """
+    Shoelace algorithm: Calculate area of polygon
+    A = 1/2(x0.y1 - x1.y0 + ... + x(n-1).yn - xn.y(n-1) + xn.y0 - x0.yn)
+    """
+    x0, y0 = points[0]
+    xn, yn = points[-1]
+
+    area = sum(x1 * y2 - x2 * y1 for (x1, y1), (x2, y2) in pairwise(points))
+
+    # add last term
+    area += xn * y0 - x0 * yn
+
+    area = abs(area) // 2
+    return area
 
 
 def iter_take(iterable, n: int) -> list:
