@@ -23,6 +23,7 @@
 | [16](https://adventofcode.com/2023/day/16) | Path and BFS                | [day16.py](src/day16.py) |
 | [17](https://adventofcode.com/2023/day/17) | Path and Dijkstra           | [day17.py](src/day17.py) |
 | [18](https://adventofcode.com/2023/day/18) | Shoelace and Pick's Theorem | [day18.py](src/day18.py) |
+| [19](https://adventofcode.com/2023/day/19) | Numbers and Rules           | [day19.py](src/day19.py) |
 
 ### Note
 
