@@ -24,6 +24,7 @@
 | [17](https://adventofcode.com/2023/day/17) | Path and Dijkstra           | [day17.py](src/day17.py) |
 | [18](https://adventofcode.com/2023/day/18) | Shoelace and Pick's Theorem | [day18.py](src/day18.py) |
 | [19](https://adventofcode.com/2023/day/19) | Numbers and Rules           | [day19.py](src/day19.py) |
+| [20](https://adventofcode.com/2023/day/20) | Modules and Pulses          | [day20.py](src/day20.py) |
 
 ### Note
 

@@ -5,6 +5,7 @@ AOC Helper Functions.
 """
 
 
+from collections.abc import Iterable
 from itertools import chain, islice, pairwise, product, repeat
 from copy import deepcopy
 from math import gcd, sqrt
@@ -62,8 +63,8 @@ def sign(num: int):
         return 0
 
 
-def lcm(nums: list) -> int:
-    assert type(nums[0]) == int
+def lcm(nums: Iterable) -> int:
+    assert type(list(nums)[0]) == int
 
     res = 1
     for n in nums:
