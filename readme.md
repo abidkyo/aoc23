@@ -25,6 +25,7 @@
 | [18](https://adventofcode.com/2023/day/18) | Shoelace and Pick's Theorem | [day18.py](src/day18.py) |
 | [19](https://adventofcode.com/2023/day/19) | Numbers and Rules           | [day19.py](src/day19.py) |
 | [20](https://adventofcode.com/2023/day/20) | Modules and Pulses          | [day20.py](src/day20.py) |
+| [21](https://adventofcode.com/2123/day/21) | BFS and Parity              | [day21.py](src/day21.py) |
 
 ### Note
 
