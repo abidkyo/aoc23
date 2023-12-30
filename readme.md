@@ -18,6 +18,6 @@
 
 ### Note
 
-python3 : `Python 3.10.12`
+python : `Python 3.10.12`
 
-pypy3 : `Python 3.8.13 [PyPy 7.3.9 with GCC 11.3.0]`
+pypy : `Python 3.10.13 [PyPy 7.3.14 with GCC 10.2.1]`
