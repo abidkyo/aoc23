@@ -14,7 +14,7 @@
 | [07](https://adventofcode.com/2023/day/7)  | Poker-like game             | [day07.py](src/day07.py) |
 | [08](https://adventofcode.com/2023/day/8)  | Path from start to end      | [day08.py](src/day08.py) |
 | [09](https://adventofcode.com/2023/day/9)  | Sequence extrapolation      | [day09.py](src/day09.py) |
-| [10](https://adventofcode.com/2023/day/10) | Sequence extrapolation      | [day10.py](src/day10.py) |
+| [10](https://adventofcode.com/2023/day/10) | Find path and space         | [day10.py](src/day10.py) |
 
 ### Note
 
