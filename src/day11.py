@@ -15,12 +15,12 @@ from aoc import list_transpose, manhattan_distance, read_input
 
 def parse_galaxy(grid: list[str], factor: int) -> list[tuple]:
     """
-    Return a list of galaxy coordinates after considering cosmic expansion.
+    Return a list of galaxy positions after considering cosmic expansion.
 
     Note:
         A galaxy is denoted as '#' on the grid.
 
-        Actual galaxy coordinates differ from the grid position,
+        Actual galaxy position differs from the grid position,
         due to cosmic expansion around empty rows and columns.
     """
     galaxies = []
