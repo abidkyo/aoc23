@@ -16,6 +16,7 @@
 | [09](https://adventofcode.com/2023/day/9)  | Sequence extrapolation      | [day09.py](src/day09.py) |
 | [10](https://adventofcode.com/2023/day/10) | Find path and space         | [day10.py](src/day10.py) |
 | [11](https://adventofcode.com/2023/day/11) | Manhattan distance          | [day11.py](src/day11.py) |
+| [12](https://adventofcode.com/2023/day/12) | Dynamic Programming         | [day12.py](src/day12.py) |
 
 ### Note
 
