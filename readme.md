@@ -19,6 +19,7 @@
 | [12](https://adventofcode.com/2023/day/12) | Dynamic Programming         | [day12.py](src/day12.py) |
 | [13](https://adventofcode.com/2023/day/13) | Reflection Point            | [day13.py](src/day13.py) |
 | [14](https://adventofcode.com/2023/day/14) | Points and Cache            | [day14.py](src/day14.py) |
+| [15](https://adventofcode.com/2023/day/15) | Data manipulation           | [day15.py](src/day15.py) |
 
 ### Note
 
